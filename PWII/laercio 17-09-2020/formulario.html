@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Formulário 17-09-2020 </title>
+</head>
+<body>
+    <center>
+    <h2>Formulario de feedback</h1><br>
+    <form name="feedback" method="post" action="formulario.php">
+        <p><b>O que você achou do site?</b></p><br>
+        <input type="radio" name="feedback" value="Muito Bom">Muito Bom
+        <input type="radio" name="feedback" value="Bom">Bom
+        <input type="radio" name="feedback" value="Regular">Regular
+        <input type="radio" name="feedback" value="Um lixo">Um lixo<br>
+        <p><b>Qual seção você mais gostou?</b></p>
+        <select name="sections">
+            <option value="feedback">Feedback</option>
+            <option value="section">Seção</option>
+            <option value="opnion">Opinião</option>
+            <option value="contact">Contato</option>
+            <option value="email">Enviar email</option>
+        </select>
+        Outra: <input type="text" name="outro" cols="30" rows="1"><br>
+        <p><b>Digite seus comentários no espaço abaixo:</b></p>
+        <textarea name="mensagem" cols="40" rows="7"></textarea><br>
+        <br>
+        <p><b>Diga-nos como entrar em contato com você:</b></p>
+        Nome:  <input type="text" name="nome" cols="30" rows="1"><br>
+        E-mail: <input type="text" name="email" cols="30" rows="1"><br>
+        Fone:  <input type="text" name="fone" cols="30" rows="1"><br>
+        Fax:  <input type="text" name="fax" cols="30" rows="1"><br><br>
+        <input type="checkbox" name="sendmail" value="sim">Quero receber as novidades do site por e-mail<br><br> 
+        <input type="submit" name="enviar" value="Enviar dados">
+        <input type="reset" value="Limpar formulario">
+    </form>
+    </center>
+</body>
+</html>
