@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/meubg">
+
+    <LinearLayout
+        android:id="@+id/ordernow"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:background="#9D2313">
+
+
+        <ImageView
+            android:id="@+id/carrinhoicimg"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            app:srcCompat="@drawable/pngegg"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/ordernowtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/order_now"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prescription"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/ordernow"
+        android:layout_marginLeft="30dp"
+        android:background="#9D2313"
+        android:layout_toEndOf="@id/ordernow"
+        android:layout_marginStart="30dp">
+
+        <ImageView
+            android:id="@+id/prescimg"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="3dp"
+            app:srcCompat="@drawable/prescription"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/presctxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prescriptions"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/orders"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp"
+        android:background="#9D2313">
+        <ImageView
+            android:id="@+id/ordersimg"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="3dp"
+            app:srcCompat="@drawable/order"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/orderstxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/orders"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pharmacits"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/orders"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:background="#9D2313"
+        android:layout_toEndOf="@id/orders"
+        android:layout_marginStart="30dp">
+        <ImageView
+            android:id="@+id/pharmimg"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="3dp"
+            app:srcCompat="@drawable/pharmacists"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/pharmtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pharmacists"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/profile"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:layout_marginTop="300dp"
+        android:background="#9D2313">
+        <ImageView
+            android:id="@+id/profimg"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="3dp"
+            app:srcCompat="@drawable/profileic"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/proftxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chats"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/profile"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="300dp"
+        android:background="#9D2313"
+        android:layout_toEndOf="@id/profile"
+        android:layout_marginStart="30dp">
+        <ImageView
+            android:id="@+id/chatimg"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="3dp"
+            app:srcCompat="@drawable/chat"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/chattxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chats"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pill"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:layout_marginTop="450dp"
+        android:background="#9D2313">
+        <ImageView
+            android:id="@+id/calenimg"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="3dp"
+            app:srcCompat="@drawable/calendar"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/pillrtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pill_reminder"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+</RelativeLayout>

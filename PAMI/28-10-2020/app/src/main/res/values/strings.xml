@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Aula laercio 28-10-2020</string>
+    <string name="medipick">Medipick</string>
+    <string name="todo">TODO</string>
+    <string name="welcome">Welcome</string>
+    <string name="please_login_here">Please login here</string>
+    <string name="chats">Chats</string>
+    <string name="profile">Profile</string>
+    <string name="pharmacists">Pharmacists</string>
+    <string name="order_now">Order Now</string>
+    <string name="prescriptions">Prescriptions</string>
+    <string name="todo2">TODO2</string>
+    <string name="todo3">TODO3</string>
+    <string name="todo4">TODO4</string>
+    <string name="todo5">TODO5</string>
+    <string name="pill_reminder">Pill Reminder</string>
+    <string name="orders">Orders</string>
+    <string name="todo7">TODO7</string>
+    <string name="todo8">TODO8</string>
+    <string name="todo9">TODO9</string>
+</resources>
