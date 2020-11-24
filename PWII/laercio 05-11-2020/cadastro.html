@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>CADASTRO DE USUÁRIO</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="cad-wrapper">
+		<h3>CADASTRO DE USUÁRIO</h3>
+		<form action="cadastro_usuario.php" method="POST">
+			<div class="group">      
+				<input type="text" name="nome" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Nome</label>
+			</div>
+		  
+			<div class="group">      
+				<input type="text" name="login" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Login</label>
+			</div>
+
+			<div class="group">      
+				<input type="password" name="senha" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Senha</label>
+			</div>
+			<input type="submit" value="Cadastrar" name="cadastrar">
+		</form>
+	</div>
+
+</body>
+</html>
