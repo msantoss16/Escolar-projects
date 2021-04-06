@@ -1,0 +1,24 @@
+{
+  "name": "restapilojavideogames",
+  "version": "1.0.0",
+  "description": "Criação de uma api rest para consumo no Heroku",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lndsilva/restapilojavideogames.git"
+  },
+  "keywords": [],
+  "author": "Laércio N. Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lndsilva/restapilojavideogames/issues"
+  },
+  "homepage": "https://github.com/lndsilva/restapilojavideogames#readme",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}

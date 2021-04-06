@@ -1,0 +1,65 @@
+{
+  "personagens":[
+    {
+      "id": 1,
+      "nome": "Obito Uchiha",
+      "sexo": "M",
+      "equipamento": "Fūma Shuriken"
+    },
+    {
+      "id": 2,
+      "nome": "Boruto Uzumaki",
+      "sexo": "M",
+      "equipamento": "Espada de Kusanagi"
+    },
+    {
+      "id": 3,
+      "nome": "Sasuke Uchiha",
+      "sexo": "M",
+      "equipamento": "Espada de Kagutsuchi"
+    }
+  ],
+  "aldeias":[
+    {
+      "id":1,
+      "vila": "Sunagakure (Vila Oculta da Areia)",
+      "lider":"Kazekage",
+      "jinchuriki":"Shukaku (A besta de uma cauda)"
+    },
+    {
+      "id":2,
+      "vila": "Kumogakure (Vila Oculta da Nuvem)",
+      "lider":"Raikage",
+      "jinchuriki":"Matatabi (A besta de duas caudas)"
+    },
+    {
+      "id":3,
+      "vila": "Kirigakure (Vila Oculta da Névoa)",
+      "lider":"Mizukage",
+      "jinchuriki":" Isobu (A besta de três caudas)"
+    }
+  ],
+  "jutsus":[
+    {
+      "id":1,
+      "nome": "Arte Sábia: Rasengan de Liberação de Magnetismo",
+      "classificacao":"Kekkei Genkai",
+      "tipo": "Juinjutsu",
+      "classe": "Ofensivo"
+    },
+    {
+      "id":2,
+      "nome": "Ultra-Grande Série de Esferas Espirais",
+      "classificacao":"Ninjutsu",
+      "tipo": "Kinjutsu",
+      "classe": "Ofensivo"
+    },
+    {
+      "id":3,
+      "nome": "Técnica dos Múltiplos Clones da Sombra",
+      "classificacao":"Ninjutsu",
+      "tipo": "Kinjutsu",
+      "classe": "Suplementar"
+    }
+  ]
+}
