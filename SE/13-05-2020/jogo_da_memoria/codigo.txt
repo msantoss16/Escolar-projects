@@ -1,0 +1,30 @@
+void setup()
+{
+  pinMode(13, OUTPUT);
+  Serial.begin(200);
+  randomSeed(analogRead(0));
+}
+
+void loop()
+{
+  int rNumbers[5];
+  for (int c = 0; c < 5; c++) {
+    rNumbers[c] = random(1,6);
+    for (int cLista = 0; cLista < c; cLista++) {
+      Serial.println(rNumbers[cLista]);
+      for (int cPiscadas = 0; cPiscadas < rNumbers[cLista]; cPiscadas++) {
+          digitalWrite(13, HIGH);
+          delay(300);
+          digitalWrite(13, LOW);
+          delay(300);
+      }
+      delay(1000);
+    }
+  }
+  Serial.println(rNumbers[0]);
+  Serial.println(rNumbers[1]);
+  Serial.println(rNumbers[2]);
+  Serial.println(rNumbers[3]);
+  Serial.println(rNumbers[4]);
+  delay(50000);
+}
