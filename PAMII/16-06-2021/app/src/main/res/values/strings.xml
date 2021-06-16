@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SQLiteAppProdutos</string>
+
+    <array name="produtos">
+        <item>Eletrodomésticos</item>
+        <item>Gamer</item>
+        <item>Conforto</item>
+        <item>Utilidades</item>
+        <item>Produção</item>
+    </array>
+
+</resources>
