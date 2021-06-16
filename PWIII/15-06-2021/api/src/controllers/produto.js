@@ -1,4 +1,7 @@
 module.exports = () => {
+    const multer = require('multer');
+    const path = require('path');
+    const fs = require('fs');
     const Produto = require('../models/produto');
     const controller = {};
 
@@ -11,6 +14,19 @@ module.exports = () => {
         const produto = await Produto.findByPk(req.params.codigo);
         return res.status(200).send(produto);
     };
+
+    controller.obterImagem = async (req, res) => {
+        let pathFile = path.join("../../../uploads/images", req.params.path)
+        return res.sendFile(path.join(__dirname + pathFile));
+    };
+
+    controller.sendFile = async (req, res, next) => {
+        const tempPath = req.file.path;
+        const targetPath = req.file.path+path.extname(req.file.originalname).toLowerCase()
+        let filename = req.file.filename+path.extname(req.file.originalname).toLowerCase()
+        fs.rename(tempPath, targetPath, () => {});
+        return res.status(200).send({image_path: filename});
+    }
 
     controller.criarProduto = async (req, res) => {
         try {

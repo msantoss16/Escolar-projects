@@ -1,4 +1,5 @@
 module.exports = app => {
+    var multer = require('multer');
     const produto = require('../controllers/produto')();
 
     app.route('/produtos')
@@ -15,4 +16,12 @@ module.exports = app => {
 
     app.route('/produtos/:codigo')
         .delete(produto.deletarProduto);
+
+        var upload = multer({ dest: 'uploads/images/' })
+
+    app.route('/upload')
+        .post(upload.single('image'), produto.sendFile);
+
+    app.route('/uploads/images/:path')
+        .get(produto.obterImagem);
 };
