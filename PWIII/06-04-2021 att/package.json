@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/lndsilva/restapilojavideogames#readme",
   "dependencies": {
-    "json-server": "^0.16.3"
+    "json-server": "^0.17.1"
   }
 }
